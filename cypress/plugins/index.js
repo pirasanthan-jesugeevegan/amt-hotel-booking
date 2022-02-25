@@ -4,7 +4,6 @@
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
-
 const cucumber = require('cypress-cucumber-preprocessor').default;
 
 // promisified fs module
@@ -28,6 +27,7 @@ module.exports = (on, config) => {
     }
   });
   config.screenshotsFolder = path.join(logPath, 'screenshots');
+
   const file = config.env.configFile || 'prod';
 
   return getConfigurationByFile(file);
