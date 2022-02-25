@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { RoomContext } from "../context";
-import Loading from "./Loading";
-import Room from "./Room";
-import Title from "./Title";
+import React, { Component } from 'react';
+import { RoomContext } from '../context';
+import Loading from './Loading';
+import Room from './Room';
+import Title from './Title';
 
 export default class FeaturedRooms extends Component {
   static contextType = RoomContext;
@@ -12,9 +12,9 @@ export default class FeaturedRooms extends Component {
       return <Room key={room.id} room={room} />;
     });
     return (
-      <section className="featured-room">
+      <section className="featured-room" data-testid="feature-room-section">
         <Title title="featured rooms" />
-        <div className="featured-rooms-center">
+        <div className="featured-rooms-center" data-testid="feature-room">
           {loading ? <Loading /> : rooms}
         </div>
       </section>
