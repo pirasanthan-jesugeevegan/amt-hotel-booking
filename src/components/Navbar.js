@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import logo from "../images/logo.svg";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import logo from '../images/logo.svg';
+import { Link } from 'react-router-dom';
 //import FormatAlignRightIcon from "@material-ui/icons/FormatAlignRight";
-import { FaAlignRight } from "react-icons/fa";
+import { FaAlignRight } from 'react-icons/fa';
 
 export default class Navbar extends Component {
   state = {
-    isOpen: false
+    isOpen: false,
   };
   handleToggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
@@ -28,13 +28,17 @@ export default class Navbar extends Component {
             </button>
           </div>
           <ul
-            className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
+            className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}
           >
             <li>
-              <Link to="/">Home</Link>
+              <Link data-testid="nav-home" to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/rooms">Rooms</Link>
+              <Link data-testid="nav-rooms" to="/rooms">
+                Rooms
+              </Link>
             </li>
           </ul>
         </div>

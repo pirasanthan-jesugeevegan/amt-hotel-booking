@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 //import Hero from "../components/Hero";
 
 export default function Banner({ title, subtitle, children }) {
   return (
     <div className="banner">
-      <h1>{title}</h1>
+      <h1 data-testid="banner-title">{title}</h1>
       <div></div>
-      <p>{subtitle}</p>
+      <p data-testid="banner-subtitle">{subtitle}</p>
       {children}
     </div>
   );
