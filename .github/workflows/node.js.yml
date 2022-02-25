@@ -10,15 +10,11 @@ jobs:
   updateBranch:
     name: Update staging branch
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js 
       uses: actions/setup-node@v2
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/stage'
       with:
         branch: staging
         force: 1 # To push-force to the branch
