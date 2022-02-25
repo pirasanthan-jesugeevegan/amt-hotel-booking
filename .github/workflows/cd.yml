@@ -1,13 +1,11 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Node.js CI
+name: Run Test
 on:
-  schedule:
-    - cron: '0 0 * * *'
   push:
     branches:
-      - 'master'
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,7 +23,7 @@ jobs:
         run: npm install
 
       - name: 🐛 Run Cypress tests
-        run:  npx cypress run
+        run: npm run run:test:stage
 
       - name: 🗄️ Generate HTML report
         run: node cucumber-html-report.js
