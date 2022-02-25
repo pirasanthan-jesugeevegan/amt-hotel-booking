@@ -4,6 +4,7 @@ Feature: Nav Function
     I want to navigate through the application
     so that i am able to access movies
 
+    @regression @smock
     Scenario Outline: TC001 - Verify nav contains Home & Rooms <elementName>
         Given the user navigates to '/'
         When the field '<elements>' is visible
