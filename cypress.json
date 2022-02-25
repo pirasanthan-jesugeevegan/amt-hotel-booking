@@ -1,0 +1,14 @@
+{
+  "testFiles": "**/*.feature",
+  "video": false,
+  "retries": 1,
+  "chromeWebSecurity": false,
+  "screenshotOnRunFailure": true,
+  "defaultCommandTimeout": 90000,
+  "pageLoadTimeout": 120000,
+  "multiple": true,
+  "experimentalStudio": true,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "restartBrowserBetweenSpecFiles": true
+}
