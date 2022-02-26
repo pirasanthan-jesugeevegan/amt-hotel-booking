@@ -29,17 +29,18 @@
     "web-vitals": "^2.1.4",
     "chai": "^4.2.0",
     "cypress": "^8.1.0",
-    "fs-extra": "^9.0.1"
+    "fs-extra": "^9.0.1",
+    "eslint": "^6.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "run:test:prod": "cypress run --env TAGS='not @ignore' configFile=prod",
-    "run:test:dev": "cypress run --env configFile=dev",
-    "run:test:stage": "cypress run --env configFile=stage",
-    "run:test:local": "cypress run --env configFile=local",
+    "run:test:prod": "cypress run --browser chrome --env TAGS='not @ignore' configFile=prod",
+    "run:test:dev": "cypress run --browser chrome --env configFile=dev",
+    "run:test:stage": "cypress run --browser chrome --env configFile=stage",
+    "run:test:local": "cypress run --browser chrome --env configFile=local",
     "open:test:prod": "cypress open --env TAGS='not @ignore' configFile=prod",
     "open:test:dev": "cypress open --env configFile=dev",
     "open:test:stage": "cypress open --env configFile=stage TAGS='not @ignore'",
