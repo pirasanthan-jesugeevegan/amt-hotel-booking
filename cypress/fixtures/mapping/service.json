@@ -1,0 +1,4 @@
+{
+  "service-title": "[data-testid=service-title]",
+  "service-description": "[data-testid=service-info]"
+}
