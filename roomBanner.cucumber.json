@@ -1,0 +1,91 @@
+[
+  {
+    "description": "    As a user\n    I want to be able to see room banner section\n    so that i can book accordingly",
+    "keyword": "Feature",
+    "name": "Room - Banner section",
+    "line": 1,
+    "id": "room---banner-section",
+    "tags": [],
+    "uri": "roomBanner.feature",
+    "elements": [
+      {
+        "id": "room---banner-section;tc007---verify-that-banner-contains-a-title-and-cta",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "TC007 - Verify that banner contains a title and CTA",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 7
+          },
+          {
+            "name": "@smoke",
+            "line": 7
+          },
+          {
+            "name": "@room-banner",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user navigates to '/rooms'",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://hotel-prod.netlify.app/rooms\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://hotel-prod.netlify.app/__cypress/runner/cypress_runner.js:156062:84\n    at visitFailedByErr (https://hotel-prod.netlify.app/__cypress/runner/cypress_runner.js:155437:12)\n    at https://hotel-prod.netlify.app/__cypress/runner/cypress_runner.js:156042:13\n    at tryCatcher (https://hotel-prod.netlify.app/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://hotel-prod.netlify.app/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://hotel-prod.netlify.app/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://hotel-prod.netlify.app/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://hotel-prod.netlify.app/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (https://hotel-prod.netlify.app/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (https://hotel-prod.netlify.app/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://hotel-prod.netlify.app/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (https://hotel-prod.netlify.app/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at Context.eval (https://hotel-prod.netlify.app/__cypress/tests?p=cypress/integration/Rooms/roomBanner.feature:500:6)\n    at Context.resolveAndRunStepDefinition (https://hotel-prod.netlify.app/__cypress/tests?p=cypress/integration/Rooms/roomBanner.feature:11538:29)\n    at Context.eval (https://hotel-prod.netlify.app/__cypress/tests?p=cypress/integration/Rooms/roomBanner.feature:10859:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the field 'banner-title' is visible",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the field 'banner-title' contains 'our rooms'",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the field 'banner-cta-btn' contains 'return home'",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user clicks on 'banner-cta-btn'",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the url contains '/'",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
