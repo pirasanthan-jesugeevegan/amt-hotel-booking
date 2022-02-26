@@ -1,3 +1,6 @@
+Prod : [![Netlify Status](https://api.netlify.com/api/v1/badges/73f78ac9-35a3-4753-ad6a-149adb773adb/deploy-status)](https://app.netlify.com/sites/hotel-prod/deploys)
+<br>Dev  : [![Netlify Status](https://api.netlify.com/api/v1/badges/308880ef-38f1-459c-8e21-33d1a1292617/deploy-status)](https://app.netlify.com/sites/hotel-dev/deploys)
+<br>Stage : [![Netlify Status](https://api.netlify.com/api/v1/badges/2096d09a-c124-472f-b858-543e2c53eecc/deploy-status)](https://app.netlify.com/sites/hotel-stage/deploys)
 # Getting Started with Create React App
 
 Hello
