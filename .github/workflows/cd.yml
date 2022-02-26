@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: 🐛 Run Cypress tests
-        run: npm run run:test:stage
+        run: npm run run:test:prod
 
       - name: 🗄️ Generate HTML report
         run: node cucumber-html-report.js
