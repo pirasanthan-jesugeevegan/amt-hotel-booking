@@ -40,7 +40,7 @@
     "run:test:prod": "cypress run --browser chrome --env TAGS='not @ignore' configFile=prod",
     "run:test:dev": "cypress run --browser chrome --env configFile=dev",
     "run:test:stage": "cypress run --browser chrome --env configFile=stage",
-    "run:test:local": "cypress run --browser chrome --env configFile=local",
+    "run:test:local": "start-server-and-test start http://localhost:3000 'cypress run --browser chrome --env configFile=local'",
     "open:test:prod": "cypress open --env TAGS='not @ignore' configFile=prod",
     "open:test:dev": "cypress open --env configFile=dev",
     "open:test:stage": "cypress open --env configFile=stage TAGS='not @ignore'",
@@ -70,7 +70,8 @@
     "cucumber-html-reporter": "^5.5.0",
     "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-cucumber-preprocessor": "^4.1.4",
-    "multiple-cucumber-html-reporter": "^1.18.0"
+    "multiple-cucumber-html-reporter": "^1.18.0",
+    "start-server-and-test": "^1.11.6"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
