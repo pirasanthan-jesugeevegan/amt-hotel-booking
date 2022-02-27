@@ -7,6 +7,8 @@ const env = (env) => {
     return 'Staging';
   } else if (env === 'https://hotel-dev.netlify.app') {
     return 'Dev';
+  } else {
+    return 'Production';
   }
 };
 
