@@ -1,74 +1,58 @@
-Prod : [![Netlify Status](https://api.netlify.com/api/v1/badges/73f78ac9-35a3-4753-ad6a-149adb773adb/deploy-status)](https://app.netlify.com/sites/hotel-prod/deploys)
-<br>Dev  : [![Netlify Status](https://api.netlify.com/api/v1/badges/308880ef-38f1-459c-8e21-33d1a1292617/deploy-status)](https://app.netlify.com/sites/hotel-dev/deploys)
-<br>Stage : [![Netlify Status](https://api.netlify.com/api/v1/badges/2096d09a-c124-472f-b858-543e2c53eecc/deploy-status)](https://app.netlify.com/sites/hotel-stage/deploys)
-# Getting Started with Create React App
+<p align="center">
+ <img height="100px" src="https://miro.medium.com/max/7200/1*Jkb_tsMBOvL6wQ8bzldu8Q.png" />
+   <img height="100px" src="https://iconape.com/wp-content/files/nn/51529/svg/cucumber.svg" />
+ </p>
+ <p align="center">
+  <img height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" /> 
+    <img height="50px" src="https://cdn.iconscout.com/icon/free/png-256/mocha-1-1175012.png" /> 
+ </p>
+This is a POC for CI/CD approach with behavior driven development (BBD) with pipeline that deploys to three different environments (Prod,Dev & Staging).
 
-Hello
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ <p align="center"> 
+ 
+ |    Environment            |Status                                       
+|----------------|-------------------------------|
+|Prod|[![Netlify Status](https://api.netlify.com/api/v1/badges/73f78ac9-35a3-4753-ad6a-149adb773adb/deploy-status)](https://app.netlify.com/sites/hotel-prod/deploys)          |      
+|Dev          |[![Netlify Status](https://api.netlify.com/api/v1/badges/308880ef-38f1-459c-8e21-33d1a1292617/deploy-status)](https://app.netlify.com/sites/hotel-dev/deploys)         |     
+|Stage          |[![Netlify Status](https://api.netlify.com/api/v1/badges/2096d09a-c124-472f-b858-543e2c53eecc/deploy-status)](https://app.netlify.com/sites/hotel-stage/deploys)
 
-## Available Scripts
+</p>
 
-In the project directory, you can run:
+</p>
 
-### `npm start`
+## Background   
+The application is a React.js, this is an example application uses to demonstrate how we can achive a CI/CD approach with behavior driven development (BBD) using cypress and cucumber. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1.  clone the repo
+2.  `npm install` or 	`yarn install`
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Run tests
 
-### `npm run build`
+ **Start React app**  
+  `npm run start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Headless Run**
+`npm run run:test:prod`
+`npm run run:test:dev`
+`npm run run:test:stage`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Cypress Test Runner**
+`npm run open:test:prod`
+`npm run open:test:dev`
+`npm run open:test:stage`
+## Technology used:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ - React.js
+ - Cypress 
+ - Cucumber
+ - Cucumber Html report
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## DEMO
+- [Live report - Schedule to run everyday ](https://pirasanthan-jesugeevegan.github.io/dev-hotel-booking/)
+- Live App on Mutltiple environments
+	- [Prod ](https://hotel-prod.netlify.app/)
+	- [Dev ](https://hotel-dev.netlify.app/)
+	- [Stage ](https://hotel-stage.netlify.app/)
