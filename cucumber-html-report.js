@@ -23,7 +23,7 @@ fs.readFile('cypress/.run/results.json', function read(err, data) {
     reportName: `Automation Report for ${env(
       runInfos.config.baseUrl
     )} Environment`,
-    pageFooter: `<div style="text-align: center"><p>Any issues contact the QA team on #qa channel</p></div>`,
+    pageFooter: `<div style="text-align: center"><p>Please contact me on www.pirasanth.com </p></div>`,
     jsonDir: 'cypress/reports',
     reportPath: 'cypress/reports',
     displayReportTime: true,

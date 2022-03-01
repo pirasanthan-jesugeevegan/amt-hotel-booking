@@ -1,4 +1,6 @@
 {
   "baseUrl": "https://hotel-prod.netlify.app",
-  "env": {}
+  "env": {
+    "TAGS": "not @ignore-prod"
+  }
 }

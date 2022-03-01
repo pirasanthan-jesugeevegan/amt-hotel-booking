@@ -1,4 +1,6 @@
 {
   "baseUrl": "https://hotel-stage.netlify.app",
-  "env": {}
+  "env": {
+    "TAGS": "not @ignore-stage"
+  }
 }

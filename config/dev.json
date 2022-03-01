@@ -1,4 +1,6 @@
 {
   "baseUrl": "https://hotel-dev.netlify.app",
-  "env": {}
+  "env": {
+    "TAGS": "not @ignore-dev"
+  }
 }
