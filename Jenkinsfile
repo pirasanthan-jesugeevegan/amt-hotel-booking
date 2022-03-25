@@ -11,11 +11,7 @@ def getBuildUser() {
 
 pipeline {
 
-    agent {
-        docker {
-            image 'cypress/base:12.16.1' 
-        }
-    }
+    agent { dockerfile true }
     
     environment {
         BUILD_USER = ''
