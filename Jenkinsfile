@@ -1,12 +1,21 @@
+import groovy.json.JsonOutput
+
+def COLOR_MAP = [
+    'SUCCESS': 'good', 
+    'FAILURE': 'danger',
+]
+
+def getBuildUser() {
+    return currentBuild.rawBuild.getCause(Cause.UserIdCause).getUserId()
+}
+
 pipeline {
 
-    agent {
+    agent any
     
-    
-    docker {
-      image 'cypress/base:10'
+    environment {
+        BUILD_USER = ''
     }
-  }
     
     tools {nodejs "nodejs"}
 
@@ -38,6 +47,18 @@ pipeline {
             steps {
                 echo "Deploying"
             }
+        }
+    }
+    post {
+        always {
+    
+            script {
+                BUILD_USER = getBuildUser()
+            }
+            
+
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
+            deleteDir()
         }
     }
 }
