@@ -1,15 +1,20 @@
-FROM cypress/browsers:node14.17.0-chrome91-ff89
+FROM cypress/base:10
+RUN node --version
+RUN npm --version
+WORKDIR /home/node/app
+# copy our test application
+COPY package.json package-lock.json ./
+COPY app ./app
+COPY serve.json ./
+# copy Cypress tests
+COPY cypress.json cypress ./
+COPY cypress ./cypress
 
-RUN mkdir /hotel-booking
+# avoid many lines of progress bars during install
+# https://github.com/cypress-io/cypress/issues/1243
+ENV CI=1
 
-WORKDIR /hotel-booking
-
-COPY ./package.json .
-COPY ./cypress.json .
-COPY ./cypress ./cypress
-
-RUN npm install
-
-ENTRYPOINT ["npx","cypress","run"]
-
-CMD [""] 
+# install NPM dependencies and Cypress binary
+RUN npm ci
+# check if the binary was installed successfully
+RUN $(npm bin)/cypress verify
