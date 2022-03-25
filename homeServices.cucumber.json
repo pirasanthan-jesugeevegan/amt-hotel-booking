@@ -36,7 +36,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 1022000000
+              "duration": 991000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "the field 'service-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 32000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "the field 'service-description' is visible",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 15000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
             "result": {
               "status": "passed",
-              "duration": 50000000
+              "duration": 52000000
             }
           }
         ]
@@ -109,7 +109,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 246000000
+              "duration": 221000000
             }
           },
           {
@@ -119,7 +119,7 @@
             "name": "the field 'service-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 21000000
             }
           },
           {
@@ -139,7 +139,7 @@
             "name": "the field 'service-description' is visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 13000000
             }
           },
           {
@@ -149,7 +149,7 @@
             "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
             "result": {
               "status": "passed",
-              "duration": 43000000
+              "duration": 51000000
             }
           }
         ]
@@ -182,7 +182,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 177000000
+              "duration": 176000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "the field 'service-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 22000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "the field 'service-title' contains 'Free Shuttle'",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 26000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "the field 'service-description' is visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 14000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 43000000
             }
           }
         ]
@@ -255,7 +255,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 350000000
+              "duration": 183000000
             }
           },
           {
@@ -265,7 +265,7 @@
             "name": "the field 'service-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 29000000
+              "duration": 30000000
             }
           },
           {
@@ -285,7 +285,7 @@
             "name": "the field 'service-description' is visible",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 12000000
             }
           },
           {
@@ -295,7 +295,7 @@
             "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
             "result": {
               "status": "passed",
-              "duration": 43000000
+              "duration": 44000000
             }
           }
         ]
