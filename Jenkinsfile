@@ -1,6 +1,10 @@
 pipeline {
 
-    agent { dockerfile true }
+    agent { 
+        docker {
+      image 'cypress/base:10'
+        } 
+    }
     
     tools {nodejs "nodejs"}
 
