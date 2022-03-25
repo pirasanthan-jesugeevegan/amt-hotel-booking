@@ -32,8 +32,7 @@ pipeline {
         
         stage('Build'){
             steps {
-                sh 'npm ci'
-                sh 'npm run cy:verify'
+                sh 'npm i'
             }
         }
         
@@ -51,7 +50,7 @@ pipeline {
                    
         
         
-        publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
+        publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
         }
     }
 }
