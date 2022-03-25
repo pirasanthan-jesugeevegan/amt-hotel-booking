@@ -37,6 +37,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "cy:verify": "cypress verify",
     "run:test:prod": "cypress run --browser chrome --env configFile=prod",
     "run:test:dev": "cypress run --browser chrome --env configFile=dev",
     "run:test:stage": "cypress run --browser chrome --env configFile=stage",
