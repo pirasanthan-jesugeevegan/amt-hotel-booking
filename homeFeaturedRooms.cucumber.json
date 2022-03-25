@@ -36,7 +36,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 1338000000
+              "duration": 890000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "the field 'feature-room-card' is visible",
             "result": {
               "status": "passed",
-              "duration": 42000000
+              "duration": 19000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "the field 'feature-room-card' contains 'double deluxe,$400,per night'",
             "result": {
               "status": "passed",
-              "duration": 102000000
+              "duration": 31000000
             }
           }
         ]
@@ -89,7 +89,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 315000000
+              "duration": 221000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "the field 'feature-room-card' is visible",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 6000000
             }
           },
           {
@@ -109,7 +109,7 @@
             "name": "the field 'feature-room-card' contains 'family deluxe,$500,per night'",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 23000000
             }
           }
         ]
@@ -142,7 +142,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 212000000
+              "duration": 169000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "the field 'feature-room-card' is visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 7000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "the field 'feature-room-card' contains 'presidential,$600,per night'",
             "result": {
               "status": "passed",
-              "duration": 34000000
+              "duration": 23000000
             }
           }
         ]
