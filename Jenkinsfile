@@ -2,11 +2,9 @@ pipeline {
 
     agent { 
         docker {
-      image 'cypress/base:10'
+            image 'cypress/base:10'
         } 
     }
-    
-    tools {nodejs "nodejs"}
 
     parameters {
         string(name: 'SPEC', defaultValue: 'cypress/integration/Home/**', description: 'E.g: cypress/integration/pom/*.spec.js')
