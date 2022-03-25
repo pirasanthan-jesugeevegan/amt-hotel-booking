@@ -3,12 +3,17 @@ pipeline {
     agent any
     
     tools {nodejs "nodejs"}
-    
+
     parameters {
-        string(name: 'SPEC', defaultValue: 'cypress/integration/**/**', description: 'E.g: cypress/integration/pom/*.spec.js')
+        string(name: 'SPEC', defaultValue: 'cypress/integration/Home/**', description: 'E.g: cypress/integration/pom/*.spec.js')
         choice(name: 'BROWSER', choices: ['chrome', 'edge', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
     }
 
+    options {
+        ansiColor('xterm')
+    }
+
+    
     stages {
         
         stage('Build'){
