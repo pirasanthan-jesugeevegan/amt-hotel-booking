@@ -36,7 +36,7 @@
             "name": "the user navigates to '/rooms'",
             "result": {
               "status": "passed",
-              "duration": 916000000
+              "duration": 992000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "the field 'search-filter-room-type-label' is visible",
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 24000000
             }
           },
           {
@@ -89,7 +89,7 @@
             "name": "the user navigates to '/rooms'",
             "result": {
               "status": "passed",
-              "duration": 285000000
+              "duration": 338000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "the field 'search-filter-guest-label' is visible",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 19000000
             }
           },
           {
@@ -109,7 +109,7 @@
             "name": "the field 'search-filter-guest-label' contains 'Guests'",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 15000000
             }
           }
         ]
@@ -142,7 +142,7 @@
             "name": "the user navigates to '/rooms'",
             "result": {
               "status": "passed",
-              "duration": 243000000
+              "duration": 234000000
             }
           },
           {
@@ -195,7 +195,7 @@
             "name": "the user navigates to '/rooms'",
             "result": {
               "status": "passed",
-              "duration": 233000000
+              "duration": 214000000
             }
           },
           {
@@ -205,7 +205,7 @@
             "name": "the field 'search-filter-size-label' is visible",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 12000000
             }
           },
           {
@@ -215,7 +215,7 @@
             "name": "the field 'search-filter-size-label' contains 'room size'",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 13000000
             }
           }
         ]
