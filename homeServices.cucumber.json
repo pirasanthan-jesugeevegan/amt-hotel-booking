@@ -36,7 +36,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 891000000
+              "duration": 870000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "the field 'service-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 28000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "the field 'service-title' contains 'free cocktails'",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 20000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
             "result": {
               "status": "passed",
-              "duration": 42000000
+              "duration": 46000000
             }
           }
         ]
@@ -109,7 +109,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 210000000
+              "duration": 211000000
             }
           },
           {
@@ -119,7 +119,7 @@
             "name": "the field 'service-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 22000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "the field 'service-title' contains 'Endless Hiking'",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 16000000
             }
           },
           {
@@ -149,7 +149,7 @@
             "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 40000000
             }
           }
         ]
@@ -182,7 +182,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 157000000
+              "duration": 159000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "the field 'service-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 16000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "the field 'service-title' contains 'Free Shuttle'",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 21000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "the field 'service-description' is visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 10000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
             "result": {
               "status": "passed",
-              "duration": 32000000
+              "duration": 33000000
             }
           }
         ]
@@ -255,7 +255,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 232000000
+              "duration": 172000000
             }
           },
           {
@@ -265,7 +265,7 @@
             "name": "the field 'service-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 16000000
             }
           },
           {
@@ -275,7 +275,7 @@
             "name": "the field 'service-title' contains 'Strongest Beer'",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 14000000
             }
           },
           {
@@ -285,7 +285,7 @@
             "name": "the field 'service-description' is visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 10000000
             }
           },
           {
@@ -295,7 +295,7 @@
             "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 32000000
             }
           }
         ]
