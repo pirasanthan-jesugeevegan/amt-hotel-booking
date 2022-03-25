@@ -1,6 +1,6 @@
 pipeline {
 
-    agent any
+    agent { dockerfile true }
     
     tools {nodejs "nodejs"}
 
@@ -13,7 +13,7 @@ pipeline {
         ansiColor('xterm')
     }
 
-    
+
     stages {
         
         stage('Build'){
