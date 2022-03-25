@@ -43,15 +43,11 @@ pipeline {
             }
         }
         
-        stage('Deploy report'){
-            steps {
-                 sh 'node cucumber-html-report.js'
-            }
-        }
+        
     }
     post {
         always {
-           
+           sh 'node cucumber-html-report.js'
                    
         
         
