@@ -1,10 +1,8 @@
 pipeline {
 
-    agent { 
-        docker {
-            image 'cypress/base:10'
-        } 
-    }
+    agent any
+    
+    tools {nodejs "nodejs"}
 
     parameters {
         string(name: 'SPEC', defaultValue: 'cypress/integration/Home/**', description: 'E.g: cypress/integration/pom/*.spec.js')
@@ -14,19 +12,18 @@ pipeline {
     options {
         ansiColor('xterm')
     }
-
-
+    
     stages {
         
         stage('Build'){
             steps {
-                echo "Building the application"
+                sh 'npm ci'
+                sh 'npm run cy:verify'
             }
         }
         
         stage('Testing') {
             steps {
-                sh "npm i"
                 sh "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
         }
