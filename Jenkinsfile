@@ -45,7 +45,7 @@ pipeline {
         
         stage('Deploy report'){
             steps {
-                 sh 'npm run cucumber-html-report.js'
+                 sh 'node cucumber-html-report.js'
             }
         }
     }
