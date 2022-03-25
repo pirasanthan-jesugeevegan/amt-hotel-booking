@@ -11,7 +11,11 @@ def getBuildUser() {
 
 pipeline {
 
-    agent any
+    agent {
+        docker {
+            image 'cypress/base:12.16.1' 
+        }
+    }
     
     environment {
         BUILD_USER = ''
@@ -32,7 +36,8 @@ pipeline {
         
         stage('Build'){
             steps {
-                sh 'npm i'
+                 sh 'npm ci'
+                    sh 'npm run cy:verify'
             }
         }
         
