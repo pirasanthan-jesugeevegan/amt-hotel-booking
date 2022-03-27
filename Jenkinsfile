@@ -21,7 +21,10 @@ pipeline {
 
     parameters {
         string(name: 'SPEC', defaultValue: 'cypress/integration/Home/**', description: 'E.g: cypress/integration/pom/*.spec.js')
-        choice(name: 'BROWSER', choices: ['chrome', 'edge', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
+        choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
+        choice(name: 'TEST', choices: ['@smoke', '@regression'], description: 'Pick the type of test to runned')
+        choice(name: 'ENV', choices: ['dev', 'stage','prod'], description: 'Pick the Environment to run on')
+         string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @navigation')
     }
 
     options {
@@ -46,7 +49,7 @@ pipeline {
                     echo 'others'
                 }
                  }
-                sh "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
+                 sh "npx cypress run --browser ${BROWSER} --env configFile=${ENV} --spec ${SPEC} TAGS='${TEST}${TAG}'"
             }
         }
         
