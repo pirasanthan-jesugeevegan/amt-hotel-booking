@@ -40,7 +40,7 @@ pipeline {
         stage('Testing') {
             steps {
                  script {
-                if(${BROWSER} == 'chrome') {
+                if(BROWSER == 'chrome') {
                     echo 'chrone'
                 } else {
                     echo 'others'
