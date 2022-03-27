@@ -26,10 +26,10 @@ pipeline {
         stage('Testing') {
             steps {
                  script {
-                if (TAG?.hasValues()) {
-                    sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TAG}'"
-                } else {
+                if (TAG?.isEmpty()) {
                     sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TEST}'"
+                } else {
+                    sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TAG}'"
                 }
                  } 
             }
