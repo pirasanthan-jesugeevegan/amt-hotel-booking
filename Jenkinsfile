@@ -19,8 +19,8 @@ pipeline {
         
         stage('Verify'){
             steps {
-                 sh 'npm ci'
-                    sh 'npm run cy:verify'
+                sh 'npm ci'
+                sh 'npm run cy:verify'
             }
         }
         stage('Testing') {
