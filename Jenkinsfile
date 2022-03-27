@@ -39,11 +39,13 @@ pipeline {
         
         stage('Testing') {
             steps {
+                 script {
                 if(${BROWSER} == 'chrome') {
                     echo 'chrone'
                 } else {
                     echo 'others'
                 }
+                 }
                 sh "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
         }
