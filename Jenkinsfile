@@ -30,7 +30,7 @@ pipeline {
     
     stages {
         
-        stage('Build'){
+        stage('Verify'){
             steps {
                  sh 'npm ci'
                     sh 'npm run cy:verify'
@@ -39,6 +39,11 @@ pipeline {
         
         stage('Testing') {
             steps {
+                if(${BROWSER} == 'chrome') {
+                    echo 'chrone'
+                } else {
+                    echo 'others'
+                }
                 sh "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
         }
