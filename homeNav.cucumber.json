@@ -36,7 +36,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 846000000
+              "duration": 1195000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "the field 'nav-bar-home' is visible",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 28000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "the field 'nav-bar-home' contains 'Home'",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 46000000
             }
           }
         ]
@@ -89,7 +89,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 230000000
+              "duration": 354000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "the field 'nav-bar-rooms' is visible",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 11000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 172000000
+              "duration": 184000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "the user clicks on 'nav-bar-home'",
             "result": {
               "status": "passed",
-              "duration": 99000000
+              "duration": 102000000
             }
           },
           {
@@ -195,7 +195,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 149000000
+              "duration": 160000000
             }
           },
           {
@@ -205,7 +205,7 @@
             "name": "the user clicks on 'nav-bar-rooms'",
             "result": {
               "status": "passed",
-              "duration": 102000000
+              "duration": 101000000
             }
           },
           {
@@ -215,7 +215,7 @@
             "name": "the url contains '/rooms'",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 5000000
             }
           }
         ]
@@ -244,7 +244,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 191000000
+              "duration": 218000000
             }
           },
           {
@@ -254,7 +254,7 @@
             "name": "the user clicks on 'nav-bar-rooms'",
             "result": {
               "status": "passed",
-              "duration": 98000000
+              "duration": 104000000
             }
           },
           {
@@ -264,7 +264,7 @@
             "name": "the url contains '/rooms'",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 9000000
             }
           },
           {
@@ -274,7 +274,7 @@
             "name": "the user clicks on 'nav-bar-logo'",
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 104000000
             }
           },
           {
