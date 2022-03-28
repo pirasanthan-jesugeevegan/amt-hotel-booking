@@ -2,10 +2,6 @@ pipeline {
 
     agent { dockerfile true }
 
-    triggers {
-         githubPush()
-    }
-
     tools {nodejs "nodejs"}
 
     parameters {

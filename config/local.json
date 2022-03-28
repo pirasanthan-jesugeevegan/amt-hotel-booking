@@ -1,7 +1,6 @@
 {
   "baseUrl": "http://localhost:3000/",
   "env": {
-    "TAGS": "not @ignore-local",
-    "Test": "hello"
+    "TAGS": "not @ignore-local"
   }
 }
