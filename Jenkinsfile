@@ -3,6 +3,7 @@ pipeline {
     agent { dockerfile true }
 
     triggers {
+        githubPush()
         cron('H/5 * * * *')
     }
 
