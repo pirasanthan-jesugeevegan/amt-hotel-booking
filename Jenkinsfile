@@ -60,6 +60,8 @@ pipeline {
     post {
         always {
            sh 'node cucumber-html-report.js'
+           echo 'currentBuild.rawBuild'
+           echo 'getCurrentStageName()'
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
         }
     }
