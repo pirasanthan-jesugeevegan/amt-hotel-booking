@@ -23,7 +23,6 @@ pipeline {
         
         stage('Verify'){
             steps {
-                sh 'npm ci'
                 sh 'npm run cy:verify'
             }
         }
