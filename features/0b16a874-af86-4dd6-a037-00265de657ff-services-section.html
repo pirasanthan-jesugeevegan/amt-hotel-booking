@@ -518,23 +518,23 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                 
                 
                 <i class="fa fa-tags fa-lg"></i>
-                <span class="tag">@regression</span><span class="tag">@smoke</span><span class="tag">@room-search</span>
+                <span class="tag">@regression</span><span class="tag">@smoke</span><span class="tag">@services</span>
                 
                 
             </div>
             <h1>Feature:
-                <small>Room - Search Function</small>
+                <small>Services Section</small>
             </h1>
             <p>
                 <strong>Description: </strong>     As a user
-    I want to be able to search a room
+    I want to be able to see all the services
     so that i can book accordingly </p>
             
            <p><strong>File name:</strong>
-                roomSearch.feature
+                homeServices.feature
             </p>
             <p><strong>Relative path:</strong>
-                roomSearch.feature</p>
+                homeServices.feature</p>
         </div>
 
         <div class="clearfix"></div>
@@ -603,7 +603,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
         
             <tr>
                 <th> Total duration:</th>
-                <tr><td>00:00:01.862</td></tr>
+                <tr><td>00:00:02.040</td></tr>
             </tr>
         
     </table>
@@ -730,13 +730,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                             
                                 <span class="tag">@smoke</span>
                             
-                                <span class="tag">@room-search</span>
+                                <span class="tag">@services</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>TC008 - Verify that search area has room type element</small></h2>
+                <h2>Scenario: <small>TC004 - Verify the service section contains free cocktails</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -753,7 +753,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">5</span>
                         </li>
                     
 
@@ -762,7 +762,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:00.955</span>
+                            <span style=padding-right:5em>00:00:01.193</span>
                         </li>
                     
                 </ul>
@@ -788,13 +788,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        the user navigates to '/rooms'
+                                        the user navigates to '/'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.914</span>
+                                            <span class="duration">00:00:01.076</span>
                                         
                                     
 
@@ -850,13 +850,75 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the field 'search-filter-room-type-label' is visible
+                                        the field 'service-title' is visible
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.025</span>
+                                            <span class="duration">00:00:00.033</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        the field 'service-title' contains 'free cocktails'
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.022</span>
                                         
                                     
 
@@ -912,13 +974,75 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        the field 'search-filter-room-type-label' contains 'room type'
+                                        the field 'service-description' is visible
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.016</span>
+                                            <span class="duration">00:00:00.013</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.049</span>
                                         
                                     
 
@@ -977,13 +1101,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                             
                                 <span class="tag">@smoke</span>
                             
-                                <span class="tag">@room-search</span>
+                                <span class="tag">@services</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>TC008 - Verify that search area has Guests element</small></h2>
+                <h2>Scenario: <small>TC004 - Verify the service section contains Endless Hiking</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1000,7 +1124,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">5</span>
                         </li>
                     
 
@@ -1009,7 +1133,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:00.335</span>
+                            <span style=padding-right:5em>00:00:00.314</span>
                         </li>
                     
                 </ul>
@@ -1035,13 +1159,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        the user navigates to '/rooms'
+                                        the user navigates to '/'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.301</span>
+                                            <span class="duration">00:00:00.226</span>
                                         
                                     
 
@@ -1097,198 +1221,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the field 'search-filter-guest-label' is visible
+                                        the field 'service-title' is visible
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.014</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        the field 'search-filter-guest-label' contains 'Guests'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.020</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                        
-                        
-                            <i class="fa fa-tags fa-lg"></i>
-                            
-                                <span class="tag">@regression</span>
-                            
-                                <span class="tag">@smoke</span>
-                            
-                                <span class="tag">@room-search</span>
-                            
-                        
-                    
-                </div>
-
-                <h2>Scenario: <small>TC008 - Verify that search area has room price $,600 element</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
-                        </li>
-                    
-
-                    
-
-                    
-                        <li>
-                            <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:00.295</span>
-                        </li>
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        the user navigates to '/rooms'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.256</span>
+                                            <span class="duration">00:00:00.018</span>
                                         
                                     
 
@@ -1341,257 +1280,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">When </span>
+                                    <span class="keyword highlight">And </span>
 
                                     
-                                        the field 'search-filter-price-label' is visible
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.010</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        the field 'search-filter-price-label' contains 'room price $,600'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.029</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                        
-                        
-                            <i class="fa fa-tags fa-lg"></i>
-                            
-                                <span class="tag">@regression</span>
-                            
-                                <span class="tag">@smoke</span>
-                            
-                                <span class="tag">@room-search</span>
-                            
-                        
-                    
-                </div>
-
-                <h2>Scenario: <small>TC008 - Verify that search area has room size element</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
-                        </li>
-                    
-
-                    
-
-                    
-                        <li>
-                            <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:00.277</span>
-                        </li>
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        the user navigates to '/rooms'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.248</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">When </span>
-
-                                    
-                                        the field 'search-filter-size-label' is visible
+                                        the field 'service-title' contains 'Endless Hiking'
                                         
                                     
 
@@ -1653,13 +1345,817 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        the field 'search-filter-size-label' contains 'room size'
+                                        the field 'service-description' is visible
                                         
                                     
 
                                     
                                         
                                             <span class="duration">00:00:00.012</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.041</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                            <i class="fa fa-tags fa-lg"></i>
+                            
+                                <span class="tag">@regression</span>
+                            
+                                <span class="tag">@smoke</span>
+                            
+                                <span class="tag">@services</span>
+                            
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>TC004 - Verify the service section contains Free Shuttle</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">5</span>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <span style="font-size:1.2em"> Duration:</span>
+                            <span style=padding-right:5em>00:00:00.262</span>
+                        </li>
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        the user navigates to '/'
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.181</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">When </span>
+
+                                    
+                                        the field 'service-title' is visible
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.019</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        the field 'service-title' contains 'Free Shuttle'
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.014</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        the field 'service-description' is visible
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.011</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.037</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                            <i class="fa fa-tags fa-lg"></i>
+                            
+                                <span class="tag">@regression</span>
+                            
+                                <span class="tag">@smoke</span>
+                            
+                                <span class="tag">@services</span>
+                            
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>TC004 - Verify the service section contains Strongest Beer</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">5</span>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <span style="font-size:1.2em"> Duration:</span>
+                            <span style=padding-right:5em>00:00:00.271</span>
+                        </li>
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        the user navigates to '/'
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.180</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">When </span>
+
+                                    
+                                        the field 'service-title' is visible
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.030</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        the field 'service-title' contains 'Strongest Beer'
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.014</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        the field 'service-description' is visible
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.011</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.036</span>
                                         
                                     
 
