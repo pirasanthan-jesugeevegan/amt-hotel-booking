@@ -3,7 +3,7 @@ pipeline {
     agent { dockerfile true }
 
     triggers {
-        cron('H 08 * * *')
+        cron('H/5 * * * *')
     }
 
     tools {nodejs "nodejs"}
@@ -30,20 +30,25 @@ pipeline {
         stage('Testing') {
             steps {
                  script {
-                     if ( currentBuild.rawBuild.getCauses()[0].toString().contains('UserIdCause') ){
-    echo 'manual trigger'
-}
-                if (TAG?.isEmpty()) {
-                    echo "$JOB_NAME"
-                    sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TEST}'"
-                } else {
-                    sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TAG}'"
-                }
+                    if ( currentBuild.rawBuild.getCauses()[0].toString().contains('UserIdCause') ){
+                        if (TAG?.isEmpty()) {
+                            echo "$JOB_NAME"
+                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TEST}'"
+                        } else {
+                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TAG}'"
+                        }
+                    } else {
+                        if(JOB_NAME == 'amt-tes-prod'){
+                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=prod TAGS='@regression'"
+                        } else {
+                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=stage TAGS='@regression'"
+                        }
+                    }
+                
                  } 
             }
         }
-        
-        
+  
     }
     post {
         always {
