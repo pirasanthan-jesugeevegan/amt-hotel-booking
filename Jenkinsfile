@@ -3,7 +3,7 @@ pipeline {
     agent { dockerfile true }
 
     triggers {
-        cron('H/5 * * * *')
+        cron('H 08 * * *')
     }
 
     tools {nodejs "nodejs"}
@@ -23,49 +23,29 @@ pipeline {
         
         stage('Verify'){
             steps {
+                sh 'npm ci'
                 sh 'npm run cy:verify'
             }
         }
         stage('Testing') {
-            parallel {
-                stage ('staging') {
-                    steps {
-                        script {
-                            if (TAG?.isEmpty()) {
-                                sh "npx cypress-tags run --browser ${BROWSER} --env configFile=stage TAGS='${TEST}'"
-                            } else {
-                                sh "npx cypress-tags run --browser ${BROWSER} --env configFile=stage TAGS='${TAG}'"
-                            }
-                        } 
-                    }
-                    post {
-                        always {
-                            sh 'node cucumber-html-report.js'
-                            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'cypress/reports', reportFiles: 'stage.html', reportName: 'HTML_Report_stage', reportTitles: ''])
-                        }
-                    }
+            steps {
+                 script {
+                if (TAG?.isEmpty()) {
+                    echo "$JOB_NAME"
+                    sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TEST}'"
+                } else {
+                    sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TAG}'"
                 }
-                stage ('production') {
-                    steps {
-                        script {
-                            if (TAG?.isEmpty()) {
-                                sh "npx cypress-tags run --browser ${BROWSER} --env configFile=prod TAGS='${TEST}'"
-                            } else {
-                                sh "npx cypress-tags run --browser ${BROWSER} --env configFile=prod TAGS='${TAG}'"
-                            }
-                        } 
-                    }
-                    post {
-                        always {
-                            sh 'node cucumber-html-report.js'
-                            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'cypress/reports', reportFiles: 'production.html', reportName: 'HTML_Report_prod', reportTitles: ''])
-                        }
-                    }
-                }
-            
+                 } 
             }
         }
-     
+        
+        
     }
-    
+    post {
+        always {
+           sh 'node cucumber-html-report.js'
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
+        }
+    }
 }
