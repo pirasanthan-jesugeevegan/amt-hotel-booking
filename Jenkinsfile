@@ -42,7 +42,7 @@ pipeline {
                     post {
                         always {
                             sh 'node cucumber-html-report.js'
-                            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML_Report_stage', reportTitles: ''])
+                            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'cypress/reports', reportFiles: 'stage.html', reportName: 'HTML_Report_stage', reportTitles: ''])
                         }
                     }
                 }
@@ -59,15 +59,14 @@ pipeline {
                     post {
                         always {
                             sh 'node cucumber-html-report.js'
-                            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML_Report_prod', reportTitles: ''])
+                            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'cypress/reports', reportFiles: 'production.html', reportName: 'HTML_Report_prod', reportTitles: ''])
                         }
                     }
                 }
             
             }
         }
-        
-        
+     
     }
     
 }
