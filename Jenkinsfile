@@ -3,7 +3,7 @@ pipeline {
     agent { dockerfile true }
 
     triggers {
-        githubPush()
+         pollSCM('')
     }
 
     tools {nodejs "nodejs"}
