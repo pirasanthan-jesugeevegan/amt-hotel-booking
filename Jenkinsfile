@@ -33,7 +33,7 @@ pipeline {
                  script {
                     if ( currentBuild.rawBuild.getCauses()[0].toString().contains('UserIdCause') ){
                         if (TAG?.isEmpty()) {
-                            echo 'dd'
+                            echo '${USERNAME}'
                             sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TEST}'"
                         } else {
                             sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TAG}'"
