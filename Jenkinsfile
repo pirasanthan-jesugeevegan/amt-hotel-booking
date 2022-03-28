@@ -2,8 +2,8 @@ pipeline {
 
     agent { dockerfile true }
 
-    triggers {
-         pollSCM('')
+    pipelineTriggers {
+         githubPush()
     }
 
     tools {nodejs "nodejs"}
@@ -33,7 +33,6 @@ pipeline {
                  script {
                     if ( currentBuild.rawBuild.getCauses()[0].toString().contains('UserIdCause') ){
                         if (TAG?.isEmpty()) {
-                            echo '${USERNAME}'
                             sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TEST}'"
                         } else {
                             sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TAG}'"
