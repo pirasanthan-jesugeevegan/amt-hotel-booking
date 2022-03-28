@@ -39,6 +39,12 @@ pipeline {
                             }
                         } 
                     }
+                    post {
+                        always {
+                            sh 'node cucumber-html-report.js'
+                            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML_Report_stage', reportTitles: ''])
+                        }
+                    }
                 }
                 stage ('production') {
                     steps {
@@ -50,6 +56,12 @@ pipeline {
                             }
                         } 
                     }
+                    post {
+                        always {
+                            sh 'node cucumber-html-report.js'
+                            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML_Report_prod', reportTitles: ''])
+                        }
+                    }
                 }
             
             }
@@ -57,12 +69,5 @@ pipeline {
         
         
     }
-    post {
-        always {
-           sh 'node cucumber-html-report.js'
-           echo 'currentBuild.rawBuild'
-           echo 'getCurrentStageName()'
-            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
-        }
-    }
+    
 }
