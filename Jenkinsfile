@@ -13,6 +13,8 @@ pipeline {
         choice(name: 'ENVIRONMENT', choices: ['stage','dev', 'prod'], description: 'Pick the environment to test against')
         choice(name: 'TEST', choices: ['@regression','@smoke'], description: 'Pick the type of test to runned')
         string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @navigation')
+        password(defaultValueAsSecret: <object of type hudson.util.Secret>, name: 'USERNAME')]
+        password(defaultValueAsSecret: <object of type hudson.util.Secret>, name: 'PASSWORD')]
     }
 
     options {
