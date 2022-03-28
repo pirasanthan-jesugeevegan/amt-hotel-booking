@@ -3,7 +3,7 @@ pipeline {
     agent { dockerfile true }
 
     triggers {
-        cron('H 08 * * *')
+        cron('H/5 * * * *')
     }
 
     tools {nodejs "nodejs"}
@@ -28,14 +28,30 @@ pipeline {
             }
         }
         stage('Testing') {
-            steps {
-                 script {
-                if (TAG?.isEmpty()) {
-                    sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TEST}'"
-                } else {
-                    sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TAG}'"
+            parallel {
+                stage ('staging') {
+                    steps {
+                        script {
+                            if (TAG?.isEmpty()) {
+                                sh "npx cypress-tags run --browser ${BROWSER} --env configFile=stage TAGS='${TEST}'"
+                            } else {
+                                sh "npx cypress-tags run --browser ${BROWSER} --env configFile=stage TAGS='${TAG}'"
+                            }
+                        } 
+                    }
                 }
-                 } 
+                stage ('production') {
+                    steps {
+                        script {
+                            if (TAG?.isEmpty()) {
+                                sh "npx cypress-tags run --browser ${BROWSER} --env configFile=prod TAGS='${TEST}'"
+                            } else {
+                                sh "npx cypress-tags run --browser ${BROWSER} --env configFile=prod TAGS='${TAG}'"
+                            }
+                        } 
+                    }
+                }
+            
             }
         }
         
