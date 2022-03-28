@@ -1,13 +1,17 @@
 pipeline {
 
     agent { dockerfile true }
-    
+
+    triggers {
+        cron('H 08 * * *')
+    }
+
     tools {nodejs "nodejs"}
 
     parameters {
         choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
-        choice(name: 'ENVIRONMENT', choices: ['dev', 'stage','prod'], description: 'Pick the environment to test against')
-        choice(name: 'TEST', choices: ['@smoke', '@regression'], description: 'Pick the type of test to runned')
+        choice(name: 'ENVIRONMENT', choices: ['stage','dev', 'prod'], description: 'Pick the environment to test against')
+        choice(name: 'TEST', choices: ['@regression','@smoke'], description: 'Pick the type of test to runned')
         string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @navigation')
     }
 
