@@ -4,7 +4,6 @@ pipeline {
 
     triggers {
         githubPush()
-        cron('H/5 * * * *')
     }
 
     tools {nodejs "nodejs"}
@@ -37,7 +36,6 @@ pipeline {
                             sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TAG}'"
                         }
                     } else {
-                        echo 'dff'
                         if(JOB_NAME == 'amt-tes-prod'){
                             sh "npx cypress-tags run --browser ${BROWSER} --env configFile=prod TAGS='@regression'"
                         } else {
