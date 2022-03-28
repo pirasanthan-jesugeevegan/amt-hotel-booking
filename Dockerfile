@@ -8,6 +8,4 @@ COPY ./package.json .
 COPY ./cypress.json .
 COPY ./cypress ./cypress
 
-RUN npm install
-
 CMD [""] 
