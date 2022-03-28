@@ -30,6 +30,9 @@ pipeline {
         stage('Testing') {
             steps {
                  script {
+                     if ( currentBuild.rawBuild.getCauses()[0].toString().contains('UserIdCause') ){
+    echo 'manual trigger'
+}
                 if (TAG?.isEmpty()) {
                     echo "$JOB_NAME"
                     sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TEST}'"
