@@ -30,7 +30,7 @@ pipeline {
         }
         stage('Run Tests') {
             parallel {
-                stage('Test On Windows') {
+                stage('Test Home') {
                     steps {
                         script {
                             if ( currentBuild.rawBuild.getCauses()[0].toString().contains('UserIdCause') ){
@@ -49,7 +49,7 @@ pipeline {
                         } 
                     }
                 }
-                stage('Test On Linux') {
+                stage('Test Rooms') {
                     steps {
                         script {
                             if ( currentBuild.rawBuild.getCauses()[0].toString().contains('UserIdCause') ){
