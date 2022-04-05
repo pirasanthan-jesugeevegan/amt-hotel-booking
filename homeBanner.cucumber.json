@@ -36,7 +36,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 1622000000
+              "duration": 1554000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "the field 'banner-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 43000000
+              "duration": 39000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "the field 'banner-subtitle' is visible",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 10000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "the field 'banner-subtitle' contains 'deluxe rooms starting at $299'",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 31000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "the field 'banner-cta-btn' is visible",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 19000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "the field 'banner-cta-btn' contains 'our rooms'",
             "result": {
               "status": "passed",
-              "duration": 32000000
+              "duration": 29000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "the user clicks on 'banner-cta-btn'",
             "result": {
               "status": "passed",
-              "duration": 232000000
+              "duration": 234000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "the url contains '/rooms'",
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 32000000
             }
           }
         ]
