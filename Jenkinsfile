@@ -29,24 +29,49 @@ pipeline {
             }
         }
         stage('Testing') {
-            steps {
+            parallel {
+                stage('Test HOME') {
+                     steps {
                  script {
                     if ( currentBuild.rawBuild.getCauses()[0].toString().contains('UserIdCause') ){
                         if (TAG?.isEmpty()) {
-                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TEST}'"
+                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} --spec 'cypress/integration/Home/*.feature' TAGS='${TEST}'"
                         } else {
-                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} TAGS='${TAG}'"
+                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} --spec 'cypress/integration/Home/*.feature' TAGS='${TAG}'"
                         }
                     } else {
                         if(JOB_NAME == 'amt-tes-prod'){
-                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=prod TAGS='@regression'"
+                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=prod --spec 'cypress/integration/Home/*.feature' TAGS='@regression'"
                         } else {
-                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=stage TAGS='@regression'"
+                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=stage --spec 'cypress/integration/Home/*.feature' TAGS='@regression'"
                         }
                     }
                 
                  } 
             }
+
+                }
+                stage('Test ROOMS') {
+                     steps {
+                 script {
+                    if ( currentBuild.rawBuild.getCauses()[0].toString().contains('UserIdCause') ){
+                        if (TAG?.isEmpty()) {
+                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} --spec 'cypress/integration/Rooms/*.feature' TAGS='${TEST}'"
+                        } else {
+                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=${ENVIRONMENT} --spec 'cypress/integration/Rooms/*.feature' TAGS='${TAG}'"
+                        }
+                    } else {
+                        if(JOB_NAME == 'amt-tes-prod'){
+                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=prod --spec 'cypress/integration/Rooms/*.feature' TAGS='@regression'"
+                        } else {
+                            sh "npx cypress-tags run --browser ${BROWSER} --env configFile=stage --spec 'cypress/integration/Rooms/*.feature' TAGS='@regression'"
+                        }
+                    }
+                
+                 } 
+            }
+                }
+           
         }
   
     }
