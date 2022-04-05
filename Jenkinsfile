@@ -70,10 +70,7 @@ pipeline {
                 
                  } 
             }
-                }
-           
-        }
-  
+                }  
     }
     post {
         always {
