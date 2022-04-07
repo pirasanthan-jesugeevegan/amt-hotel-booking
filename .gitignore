@@ -9,7 +9,7 @@ cypress/reports
 
 # testing
 /coverage
-
+cypress/fixtures/mapping/global.json
 # production
 /build
 
