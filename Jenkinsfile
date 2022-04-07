@@ -25,7 +25,7 @@ pipeline {
         
         stage('Verify'){
             steps {
-                sh 'npm run cy:verify'
+                sh 'npm i'
             }
         }
         stage('Run Tests') {
