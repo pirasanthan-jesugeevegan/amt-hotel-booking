@@ -21,11 +21,12 @@ module.exports = (on, config) => {
   (async () => {
     try {
       const response = await superagent.get(
-        'https://624c1f9471e21eebbcfa85b5.mockapi.io/banner'
+        // 'https://624c1f9471e21eebbcfa85b5.mockapi.io/banner'
+        'https://element-selector-app.herokuapp.com/attributes/'
       );
       fs.writeFile(
         'cypress/fixtures/mapping/global.json',
-        JSON.stringify(response.body)
+        JSON.stringify(response.body[0])
       );
     } catch (error) {
       console.log(error);
