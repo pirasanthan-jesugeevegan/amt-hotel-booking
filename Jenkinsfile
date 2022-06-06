@@ -26,6 +26,7 @@ pipeline {
         stage('Verify'){
             steps {
                 sh 'npm i'
+                echo "$JOB_NAME"
             }
         }
         stage('Run Tests') {
