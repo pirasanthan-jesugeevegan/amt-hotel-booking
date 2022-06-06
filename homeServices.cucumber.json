@@ -36,7 +36,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 843000000
+              "duration": 894000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "the field 'service-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 22000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 39000000
             }
           }
         ]
@@ -109,7 +109,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 193000000
+              "duration": 199000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "the field 'service-title' contains 'Endless Hiking'",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 14000000
             }
           },
           {
@@ -139,7 +139,7 @@
             "name": "the field 'service-description' is visible",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 11000000
             }
           },
           {
@@ -149,7 +149,7 @@
             "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
             "result": {
               "status": "passed",
-              "duration": 33000000
+              "duration": 34000000
             }
           }
         ]
@@ -182,7 +182,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 160000000
+              "duration": 158000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 29000000
             }
           }
         ]
@@ -255,7 +255,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 166000000
+              "duration": 174000000
             }
           },
           {
@@ -265,7 +265,7 @@
             "name": "the field 'service-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 12000000
             }
           },
           {
@@ -295,7 +295,7 @@
             "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
             "result": {
               "status": "passed",
-              "duration": 35000000
+              "duration": 28000000
             }
           }
         ]
