@@ -3,9 +3,7 @@ pipeline {
     agent { dockerfile true }
 
 environment {
-        CREDS = credentials('amt-tes-userpass')    // This provides 3 variables: CREDS=username:password, CREDS_USR=username, CREDS_PSW=password (https://www.jenkins.io/doc/book/pipeline/jenkinsfile/#usernames-and-passwords)
-        WEB_HOOK_URL = credentials('amt-tes-webhook')   
-        GIT_COMMIT_MSG = sh (script: 'git log -1 --pretty=%B ${GIT_COMMIT}', returnStdout: true).trim()
+       
         TEST_COVER = "${TAG?.isEmpty() ? TEST : TAG}"
     }
 
