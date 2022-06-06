@@ -5,7 +5,7 @@ RUN mkdir /hotel-booking
 WORKDIR /hotel-booking
 
 COPY ./package.json .
-COPY ./cypress.json .
+COPY ./cypress.config.js .
 COPY ./cypress ./cypress
 
 CMD [""] 
