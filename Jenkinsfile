@@ -3,10 +3,10 @@ pipeline {
     agent { dockerfile true }
 
 
-    environment {
+ 
        
-        TEST_COVER = "${JOB_NAME == 'amt-tes-prod' ? ['stage','dev', 'prod'] : 'fff'}"
-    }
+    def TEST_COVER = "${JOB_NAME == 'amt-tes-prod' ? ['stage','dev', 'prod'] : 'fff'}"
+    
 
     triggers {
          cron('H 08 * * *')
