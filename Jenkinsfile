@@ -3,7 +3,7 @@ pipeline {
     agent { dockerfile true }
 
 environment {
-        ENV = ['stage','dev', 'prod']
+        ENV = '['stage','dev', 'prod']'
     }
 
     
