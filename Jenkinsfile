@@ -25,7 +25,7 @@ pipeline {
         password(name: 'USERNAME', defaultValue: 'automation_teacher')
         password(name: 'PASSWORD', defaultValue: 'Test1234!')
     }
-    ])
+
     }
 
     
