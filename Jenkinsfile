@@ -1,19 +1,11 @@
 pipeline {
-    node {
+
     if (JOB_NAME == 'deploy') {
-        properties([
-            parameters([
-                choice(name: 'deployEnv', choices: ['deployEnv1', 'deployEnv2'], description: '')
-            ])
-        ])
+        echo 'sdsd'
     } else  {
-        properties([
-            parameters([
-                choice(name: 'testEnv', choices: ['testEnv1', 'testEnv2'], description: '')
-            ])
-        ])
+        echo 'sssss'
     }
-    }
+
     agent { dockerfile true }
 
     triggers {
