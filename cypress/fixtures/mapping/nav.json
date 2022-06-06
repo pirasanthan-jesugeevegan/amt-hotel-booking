@@ -1,6 +1,0 @@
-{
-  "nav-bar": "navbar",
-  "nav-bar-home": "[data-testid=nav-home]",
-  "nav-bar-rooms": "[data-testid=nav-rooms]",
-  "nav-bar-logo": ".nav-header > a"
-}

@@ -1,5 +1,0 @@
-{
-  "banner-title": "[data-testid=banner-title]",
-  "banner-subtitle": "[data-testid=banner-subtitle]",
-  "banner-cta-btn": "[data-testid=cta]"
-}
