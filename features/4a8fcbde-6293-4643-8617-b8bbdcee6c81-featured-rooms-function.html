@@ -518,23 +518,23 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                 
                 
                 <i class="fa fa-tags fa-lg"></i>
-                <span class="tag">@regression</span><span class="tag">@smoke</span><span class="tag">@navigation</span>
+                <span class="tag">@regression</span><span class="tag">@smoke</span><span class="tag">@featured-rooms</span>
                 
                 
             </div>
             <h1>Feature:
-                <small>Nav Function</small>
+                <small>Featured Rooms Function</small>
             </h1>
             <p>
                 <strong>Description: </strong>     As a user
-    I want to navigate through the application
-    so that i am able to access movies </p>
+    I want to be able to see featured rooms
+    so that i can book accordingly </p>
             
            <p><strong>File name:</strong>
-                homeNav.feature
+                homeFeaturedRooms.feature
             </p>
             <p><strong>Relative path:</strong>
-                homeNav.feature</p>
+                homeFeaturedRooms.feature</p>
         </div>
 
         <div class="clearfix"></div>
@@ -571,7 +571,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">5</div>
+                <div class="total">3</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -603,7 +603,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
         
             <tr>
                 <th> Total duration:</th>
-                <tr><td>00:00:01.976</td></tr>
+                <tr><td>00:00:01.437</td></tr>
             </tr>
         
     </table>
@@ -730,13 +730,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                             
                                 <span class="tag">@smoke</span>
                             
-                                <span class="tag">@navigation</span>
+                                <span class="tag">@featured-rooms</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>TC001 - Verify nav contains home</small></h2>
+                <h2>Scenario: <small>TC005 - Verify that the featured rooms has the max of three rooms displayed</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -762,7 +762,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:00.842</span>
+                            <span style=padding-right:5em>00:00:00.971</span>
                         </li>
                     
                 </ul>
@@ -794,7 +794,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                                     
                                         
-                                            <span class="duration">00:00:00.812</span>
+                                            <span class="duration">00:00:00.924</span>
                                         
                                     
 
@@ -850,7 +850,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the field 'nav-bar-home' is visible
+                                        the field 'feature-room-card' is visible
                                         
                                     
 
@@ -909,263 +909,16 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">Then </span>
+                                    <span class="keyword highlight">And </span>
 
                                     
-                                        the field 'nav-bar-home' contains 'Home'
+                                        the field 'feature-room-card' contains 'double deluxe,$400,per night'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.013</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                        
-                        
-                            <i class="fa fa-tags fa-lg"></i>
-                            
-                                <span class="tag">@regression</span>
-                            
-                                <span class="tag">@smoke</span>
-                            
-                                <span class="tag">@navigation</span>
-                            
-                        
-                    
-                </div>
-
-                <h2>Scenario: <small>TC001 - Verify nav contains rooms</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
-                        </li>
-                    
-
-                    
-
-                    
-                        <li>
-                            <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:00.225</span>
-                        </li>
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        the user navigates to '/'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.205</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">When </span>
-
-                                    
-                                        the field 'nav-bar-rooms' is visible
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.009</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        the field 'nav-bar-rooms' contains 'Rooms'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.011</span>
+                                            <span class="duration">00:00:00.030</span>
                                         
                                     
 
@@ -1224,260 +977,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                             
                                 <span class="tag">@smoke</span>
                             
-                                <span class="tag">@navigation</span>
+                                <span class="tag">@featured-rooms</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>TC002 - Verify nav contains home</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
-                        </li>
-                    
-
-                    
-
-                    
-                        <li>
-                            <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:00.269</span>
-                        </li>
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        the user navigates to '/'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.167</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">When </span>
-
-                                    
-                                        the user clicks on 'nav-bar-home'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.098</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        the url contains '/'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.004</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                        
-                        
-                            <i class="fa fa-tags fa-lg"></i>
-                            
-                                <span class="tag">@regression</span>
-                            
-                                <span class="tag">@smoke</span>
-                            
-                                <span class="tag">@navigation</span>
-                            
-                        
-                    
-                </div>
-
-                <h2>Scenario: <small>TC002 - Verify nav contains rooms</small></h2>
+                <h2>Scenario: <small>TC005 - Verify that the featured rooms has the max of three rooms displayed</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1535,7 +1041,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                                     
                                         
-                                            <span class="duration">00:00:00.145</span>
+                                            <span class="duration">00:00:00.220</span>
                                         
                                     
 
@@ -1591,13 +1097,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the user clicks on 'nav-bar-rooms'
+                                        the field 'feature-room-card' is visible
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.100</span>
+                                            <span class="duration">00:00:00.008</span>
                                         
                                     
 
@@ -1650,16 +1156,16 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">Then </span>
+                                    <span class="keyword highlight">And </span>
 
                                     
-                                        the url contains '/rooms'
+                                        the field 'feature-room-card' contains 'family deluxe,$500,per night'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.008</span>
+                                            <span class="duration">00:00:00.025</span>
                                         
                                     
 
@@ -1718,11 +1224,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                             
                                 <span class="tag">@smoke</span>
                             
+                                <span class="tag">@featured-rooms</span>
+                            
                         
                     
                 </div>
 
-                <h2>Scenario: <small>TC003 - Verify that the logo will navigate to home page</small></h2>
+                <h2>Scenario: <small>TC005 - Verify that the featured rooms has the max of three rooms displayed</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1739,7 +1247,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">5</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
                         </li>
                     
 
@@ -1748,7 +1256,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:00.387</span>
+                            <span style=padding-right:5em>00:00:00.213</span>
                         </li>
                     
                 </ul>
@@ -1780,7 +1288,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                                     
                                         
-                                            <span class="duration">00:00:00.187</span>
+                                            <span class="duration">00:00:00.183</span>
                                         
                                     
 
@@ -1836,75 +1344,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the user clicks on 'nav-bar-rooms'
+                                        the field 'feature-room-card' is visible
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.100</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        the url contains '/rooms'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.004</span>
+                                            <span class="duration">00:00:00.005</span>
                                         
                                     
 
@@ -1960,75 +1406,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        the user clicks on 'nav-bar-logo'
+                                        the field 'feature-room-card' contains 'presidential,$600,per night'
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.093</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        the url contains '/'
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.003</span>
+                                            <span class="duration">00:00:00.025</span>
                                         
                                     
 
@@ -2112,7 +1496,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     ],
                     datasets: [{
                         data: [
-                            5,
+                            3,
                             0,
                             0,
                             0,

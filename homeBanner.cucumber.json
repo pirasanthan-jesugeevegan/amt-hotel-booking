@@ -36,7 +36,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 1033000000
+              "duration": 1035000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "the field 'banner-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 44000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "the field 'banner-title' contains 'luxurious rooms'",
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 27000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "the field 'banner-subtitle' contains 'deluxe rooms starting at $299'",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 22000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "the field 'banner-cta-btn' is visible",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 13000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "the user clicks on 'banner-cta-btn'",
             "result": {
               "status": "passed",
-              "duration": 205000000
+              "duration": 219000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "the url contains '/rooms'",
             "result": {
               "status": "passed",
-              "duration": 43000000
+              "duration": 24000000
             }
           }
         ]
