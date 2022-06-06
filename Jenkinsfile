@@ -1,5 +1,5 @@
 pipeline {
-
+    node {
     if (JOB_NAME == 'deploy') {
         properties([
             parameters([
@@ -13,7 +13,7 @@ pipeline {
             ])
         ])
     }
-
+    }
     agent { dockerfile true }
 
     triggers {
