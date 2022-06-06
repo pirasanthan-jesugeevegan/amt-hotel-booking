@@ -31,10 +31,6 @@ pipeline {
         ])
     }
 
-    parameters {
-        
-    }
-
     options {
         ansiColor('xterm')
     }
