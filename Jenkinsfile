@@ -2,15 +2,18 @@ pipeline {
 
     agent { dockerfile true }
 
+
+    environment {
+       
+        TEST_COVER = "${JOB_NAME == 'amt-tes-prod' ? 'ss' : 'fff'}"
+    }
+
     triggers {
          cron('H 08 * * *')
     }
 
     tools {nodejs "nodejs"}
-    if(JOB_NAME == 'amt-tes-prod'){
-        echo "amt-tes-prod"
-    }
-    
+
     parameters {
         choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
         choice(name: 'ENVIRONMENT', choices: ['stage','dev', 'prod'], description: 'Pick the environment to test against')
@@ -29,7 +32,7 @@ pipeline {
         stage('Verify'){
             steps {
                 sh 'npm i'
-                echo "$JOB_NAME"
+                echo "$TEST_COVER"
             }
         }
         stage('Run Tests') {
