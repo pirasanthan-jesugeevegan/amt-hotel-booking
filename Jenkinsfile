@@ -2,14 +2,14 @@ pipeline {
 
     agent { dockerfile true }
 
-    environment {
+environment {
         CREDS = credentials('amt-tes-userpass')    // This provides 3 variables: CREDS=username:password, CREDS_USR=username, CREDS_PSW=password (https://www.jenkins.io/doc/book/pipeline/jenkinsfile/#usernames-and-passwords)
         WEB_HOOK_URL = credentials('amt-tes-webhook')   
         GIT_COMMIT_MSG = sh (script: 'git log -1 --pretty=%B ${GIT_COMMIT}', returnStdout: true).trim()
-        ENV = ['stage','dev', 'prod']
+        TEST_COVER = "${TAG?.isEmpty() ? TEST : TAG}"
     }
 
-
+    
     triggers {
          cron('H 08 * * *')
     }
@@ -18,7 +18,7 @@ pipeline {
 
     parameters {
         choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
-        choice(name: 'ENVIRONMENT', choices: ${ENV}, description: 'Pick the environment to test against')
+        choice(name: 'ENVIRONMENT', choices: ['stage','dev', 'prod'], description: 'Pick the environment to test against')
         choice(name: 'TEST', choices: ['@regression','@smoke'], description: 'Pick the type of test to runned')
         string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @navigation')
         password(name: 'USERNAME', defaultValue: 'automation_teacher')
