@@ -36,7 +36,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 1316000000
+              "duration": 1075000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "the field 'feature-room-card' is visible",
             "result": {
               "status": "passed",
-              "duration": 46000000
+              "duration": 21000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "the field 'feature-room-card' contains 'double deluxe,$400,per night'",
             "result": {
               "status": "passed",
-              "duration": 91000000
+              "duration": 35000000
             }
           }
         ]
@@ -89,7 +89,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 346000000
+              "duration": 249000000
             }
           },
           {
@@ -109,7 +109,7 @@
             "name": "the field 'feature-room-card' contains 'family deluxe,$500,per night'",
             "result": {
               "status": "passed",
-              "duration": 39000000
+              "duration": 33000000
             }
           }
         ]
@@ -142,7 +142,7 @@
             "name": "the user navigates to '/'",
             "result": {
               "status": "passed",
-              "duration": 309000000
+              "duration": 211000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "the field 'feature-room-card' is visible",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 8000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "the field 'feature-room-card' contains 'presidential,$600,per night'",
             "result": {
               "status": "passed",
-              "duration": 42000000
+              "duration": 26000000
             }
           }
         ]
