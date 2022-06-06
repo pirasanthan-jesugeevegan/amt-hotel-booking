@@ -1,5 +1,19 @@
 pipeline {
 
+    if (JOB_NAME == 'deploy') {
+        properties([
+            parameters([
+                choice(name: 'deployEnv', choices: ['deployEnv1', 'deployEnv2'], description: '')
+            ])
+        ])
+    } else  {
+        properties([
+            parameters([
+                choice(name: 'testEnv', choices: ['testEnv1', 'testEnv2'], description: '')
+            ])
+        ])
+    }
+
     agent { dockerfile true }
 
     triggers {
@@ -7,19 +21,7 @@ pipeline {
     }
 
     tools {nodejs "nodejs"}
-    if (JOB_NAME == 'amt-tes-prod') {
-        properties([
-            parameters([
-                choice(name: 'deployEnv', choices: ['deployEnv1', 'deployEnv2'], description: '')
-            ])
-        ])
-    } else {
-        properties([
-        parameters([
-            choice(name: 'testEnv', choices: ['testEnv1', 'testEnv2'], description: '')
-        ])
-    ])
-    }
+
 
 
     options {
