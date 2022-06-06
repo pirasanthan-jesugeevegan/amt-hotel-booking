@@ -8,6 +8,7 @@ pipeline {
 
     tools {nodejs "nodejs"}
 
+    script {
     if(JOB_NAME == 'amt-tes-prod'){
     properties([
         parameters([
@@ -21,7 +22,7 @@ pipeline {
         ])
     ])
     }
-   
+    }
 
     options {
         ansiColor('xterm')
