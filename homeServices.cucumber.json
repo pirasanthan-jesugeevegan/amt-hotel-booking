@@ -1,0 +1,305 @@
+[
+  {
+    "description": "    As a user\n    I want to be able to see all the services\n    so that i can book accordingly",
+    "keyword": "Feature",
+    "name": "Services Section",
+    "line": 1,
+    "id": "services-section",
+    "tags": [],
+    "uri": "homeServices.feature",
+    "elements": [
+      {
+        "id": "services-section;tc004---verify-the-service-section-contains-free-cocktails",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "TC004 - Verify the service section contains free cocktails",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 7
+          },
+          {
+            "name": "@smoke",
+            "line": 7
+          },
+          {
+            "name": "@services",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user navigates to '/'",
+            "result": {
+              "status": "passed",
+              "duration": 1010000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the field 'service-title' is visible",
+            "result": {
+              "status": "passed",
+              "duration": 40000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the field 'service-title' contains 'free cocktails'",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the field 'service-description' is visible",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
+            "result": {
+              "status": "passed",
+              "duration": 56000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "services-section;tc004---verify-the-service-section-contains-endless-hiking",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "TC004 - Verify the service section contains Endless Hiking",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 7
+          },
+          {
+            "name": "@smoke",
+            "line": 7
+          },
+          {
+            "name": "@services",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user navigates to '/'",
+            "result": {
+              "status": "passed",
+              "duration": 262000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the field 'service-title' is visible",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the field 'service-title' contains 'Endless Hiking'",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the field 'service-description' is visible",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
+            "result": {
+              "status": "passed",
+              "duration": 51000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "services-section;tc004---verify-the-service-section-contains-free-shuttle",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "TC004 - Verify the service section contains Free Shuttle",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 7
+          },
+          {
+            "name": "@smoke",
+            "line": 7
+          },
+          {
+            "name": "@services",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user navigates to '/'",
+            "result": {
+              "status": "passed",
+              "duration": 227000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the field 'service-title' is visible",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the field 'service-title' contains 'Free Shuttle'",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the field 'service-description' is visible",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "services-section;tc004---verify-the-service-section-contains-strongest-beer",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "TC004 - Verify the service section contains Strongest Beer",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 7
+          },
+          {
+            "name": "@smoke",
+            "line": 7
+          },
+          {
+            "name": "@services",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user navigates to '/'",
+            "result": {
+              "status": "passed",
+              "duration": 240000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the field 'service-title' is visible",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the field 'service-title' contains 'Strongest Beer'",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the field 'service-description' is visible",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the field 'service-description' contains 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'",
+            "result": {
+              "status": "passed",
+              "duration": 47000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
