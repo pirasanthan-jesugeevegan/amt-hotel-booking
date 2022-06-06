@@ -36,7 +36,7 @@
             "name": "the user navigates to '/rooms'",
             "result": {
               "status": "passed",
-              "duration": 1016000000
+              "duration": 936000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "the field 'banner-title' is visible",
             "result": {
               "status": "passed",
-              "duration": 42000000
+              "duration": 28000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "the field 'banner-title' contains 'our rooms'",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 31000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "the user clicks on 'banner-cta-btn'",
             "result": {
               "status": "passed",
-              "duration": 163000000
+              "duration": 155000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "the url contains '/'",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 11000000
             }
           }
         ]
