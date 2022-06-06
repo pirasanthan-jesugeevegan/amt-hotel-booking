@@ -18,7 +18,7 @@ pipeline {
                 password(name: 'PASSWORD', defaultValue: 'Test1234!')
             ])
         ])
-    } else if (JOB_NAME == 'test') {
+    } else {
         properties([
             parameters([
                 choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
