@@ -2,11 +2,6 @@ pipeline {
 
     agent { dockerfile true }
 
-environment {
-       
-        TEST_COVER = "${TAG?.isEmpty() ? TEST : TAG}"
-    }
-
     
     triggers {
          cron('H 08 * * *')
