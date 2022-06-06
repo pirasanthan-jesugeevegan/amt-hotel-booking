@@ -7,10 +7,11 @@ pipeline {
     }
 
     tools {nodejs "nodejs"}
-
     if(JOB_NAME == 'amt-tes-prod'){
-    properties{
-        parameters {
+        echo "amt-tes-prod"
+    }
+    
+    parameters {
         choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
         choice(name: 'ENVIRONMENT', choices: ['stage','dev', 'prod'], description: 'Pick the environment to test against')
         choice(name: 'TEST', choices: ['@regression','@smoke'], description: 'Pick the type of test to runned')
@@ -18,21 +19,6 @@ pipeline {
         password(name: 'USERNAME', defaultValue: 'automation_teacher')
         password(name: 'PASSWORD', defaultValue: 'Test1234!')
     }
-    }
-
-    } else if (JOB_NAME == 'test_deploy') {
-    properties{
-        parameters {
-        choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
-        choice(name: 'ENVIRONMENT', choices: ['staged','devd', 'prodd'], description: 'Pick the environment to test against')
-        choice(name: 'TEST', choices: ['@regression','@smoke'], description: 'Pick the type of test to runned')
-        string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @navigation')
-        password(name: 'USERNAME', defaultValue: 'automation_teacher')
-        password(name: 'PASSWORD', defaultValue: 'Test1234!')
-    }
-    }
-    }
-    
 
     options {
         ansiColor('xterm')
