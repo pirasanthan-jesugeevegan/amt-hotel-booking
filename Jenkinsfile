@@ -26,12 +26,8 @@ pipeline {
 
     agent { dockerfile true }
 
-    environment{
-        if (JOB_NAME == 'amt-tes-prod') {
-            DISABLE_AUTH = 'true'
-        } else {
-            DISABLE_AUTH = 'false'
-        }
+    environment {
+        DISABLE_AUTH = 'true'
     }
 
     triggers {
