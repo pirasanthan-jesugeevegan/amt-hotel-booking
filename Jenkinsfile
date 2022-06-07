@@ -7,9 +7,6 @@ if (JOB_NAME == 'amt-tes-prod') {
             string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @navigation'),
             password(name: 'USERNAME', defaultValue: 'automation_teacher'),
             password(name: 'PASSWORD', defaultValue: 'Test1234!')
-        ]),
-        environment([
-            DISABLE_AUTH = 'true'
         ])
     ])
 } else if (JOB_NAME == 'amt-tes-stage') {
@@ -28,6 +25,14 @@ if (JOB_NAME == 'amt-tes-prod') {
 pipeline {
 
     agent { dockerfile true }
+
+    environment{
+        if (JOB_NAME == 'amt-tes-prod') {
+            DISABLE_AUTH = 'true'
+        } else {
+            DISABLE_AUTH = 'false'
+        }
+    }
 
     triggers {
          cron('H 08 * * *')
