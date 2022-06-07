@@ -1,13 +1,23 @@
-if (JOB_NAME == 'deploy') {
+if (JOB_NAME == 'amt-tes-prod') {
     properties([
         parameters([
-            choice(name: 'deployEnv', choices: ['deployEnv1', 'deployEnv2'], description: '')
+            choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
+            choice(name: 'ENVIRONMENT', choices: ['stage-prod','dev-prod', 'prod-prod'], description: 'Pick the environment to test against')
+            choice(name: 'TEST', choices: ['@regression','@smoke'], description: 'Pick the type of test to runned')
+            string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @navigation')
+            password(name: 'USERNAME', defaultValue: 'automation_teacher')
+            password(name: 'PASSWORD', defaultValue: 'Test1234!')
         ])
     ])
-} else {
+} else if (JOB_NAME == 'amt-tes-stage') {
     properties([
         parameters([
-            choice(name: 'testEnv', choices: ['testEnv1', 'testEnv2'], description: '')
+            choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
+            choice(name: 'ENVIRONMENT', choices: ['stage-stag','dev-stag', 'prod-stage'], description: 'Pick the environment to test against')
+            choice(name: 'TEST', choices: ['@regression','@smoke'], description: 'Pick the type of test to runned')
+            string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @navigation')
+            password(name: 'USERNAME', defaultValue: 'automation_teacher')
+            password(name: 'PASSWORD', defaultValue: 'Test1234!')
         ])
     ])
 }
