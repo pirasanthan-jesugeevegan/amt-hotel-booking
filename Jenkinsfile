@@ -9,7 +9,7 @@ if (JOB_NAME == 'amt-tes-prod') {
             password(name: 'PASSWORD', defaultValue: 'Test1234!')
         ])
     ])
-     env.BRANCH = credentials('amt-tes-userpass')
+     env.BRANCH = "master"
 } else if (JOB_NAME == 'amt-tes-stage') {
     properties([
         parameters([
@@ -21,6 +21,7 @@ if (JOB_NAME == 'amt-tes-prod') {
             password(name: 'PASSWORD', defaultValue: 'Test1234!')
         ])
     ])
+    env.BRANCH = "new"
 }
 
 pipeline {
