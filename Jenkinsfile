@@ -7,6 +7,9 @@ if (JOB_NAME == 'amt-tes-prod') {
             string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @navigation'),
             password(name: 'USERNAME', defaultValue: 'automation_teacher'),
             password(name: 'PASSWORD', defaultValue: 'Test1234!')
+        ]),
+        environment([
+            DISABLE_AUTH = 'true'
         ])
     ])
 } else if (JOB_NAME == 'amt-tes-stage') {
@@ -42,6 +45,7 @@ pipeline {
             steps {
                 sh 'npm i'
                 echo "$JOB_NAME"
+                echo "DISABLE_AUTH is ${DISABLE_AUTH}"
             }
         }
         stage('Run Tests') {
