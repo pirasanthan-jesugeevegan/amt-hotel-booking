@@ -28,7 +28,7 @@ pipeline {
     agent { dockerfile true }
 
     environment {
-        DISABLE_AUTH = ${dd}
+        DISABLE_AUTH = "${dd}"
     }
 
     triggers {
