@@ -8,14 +8,11 @@ pipeline {
 
     tools {nodejs "nodejs"}
 
-    parameters {
-        choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
-        choice(name: 'ENVIRONMENT', choices: ${JOB_NAME == 'amt-tes-prod' ? ['stage','dev', 'prod'] : ['s']}, description: 'Pick the environment to test against')
-        choice(name: 'TEST', choices: ['@regression','@smoke'], description: 'Pick the type of test to runned')
-        string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @navigation')
-        password(name: 'USERNAME', defaultValue: 'automation_teacher')
-        password(name: 'PASSWORD', defaultValue: 'Test1234!')
-    }
+    if (JOB_NAME == 'deploy') {
+    echo 'dsdsd'
+} else  {
+    echo 'deploy'
+}
 
     options {
         ansiColor('xterm')
