@@ -1,24 +1,16 @@
 if (JOB_NAME == 'amt-tes-prod') {
     properties([
         parameters([
-            choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts'),
             choice(name: 'ENVIRONMENT', choices: ['stage-prod','dev-prod', 'prod-prod'], description: 'Pick the environment to test against'),
             choice(name: 'TEST', choices: ['@regression','@smoke'], description: 'Pick the type of test to runned'),
-            string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @navigation'),
-            password(name: 'USERNAME', defaultValue: 'automation_teacher'),
-            password(name: 'PASSWORD', defaultValue: 'Test1234!')
         ])
     ])
      env.BRANCH = "master"
 } else if (JOB_NAME == 'amt-tes-stage') {
     properties([
-        parameters([
-            choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts'),
+        parameters([  
             choice(name: 'ENVIRONMENT', choices: ['stage-stag','dev-stag', 'prod-stage'], description: 'Pick the environment to test against'),
-            choice(name: 'TEST', choices: ['@regression','@smoke'], description: 'Pick the type of test to runned'),
-            string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @navigation'),
-            password(name: 'USERNAME', defaultValue: 'automation_teacher'),
-            password(name: 'PASSWORD', defaultValue: 'Test1234!')
+            choice(name: 'TEST', choices: ['@regression-stag','@smoke-stage'], description: 'Pick the type of test to runned'),
         ])
     ])
     env.BRANCH = "new"
@@ -30,6 +22,11 @@ pipeline {
 
     triggers {
          cron('H 08 * * *')
+    }
+
+    parameters {
+        choice(name: 'BROWSER', choices: ['chrome', 'electron', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
+        string(name: 'TAG', defaultValue: '', description: 'Run collection of test E.g: @app-fulfilment')
     }
 
     tools {nodejs "nodejs"}
