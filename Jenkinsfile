@@ -1,7 +1,8 @@
 if (JOB_NAME == 'amt-tes-prod') {
     properties([
         parameters([
-            choice(name: 'ENVIRONMENT', choices: ['stage-prod','dev-prod', 'prod-prod'], description: 'Pick the environment to test against')
+            choice(name: 'ENVIRONMENT', choices: ['stage-prod','dev-prod', 'prod-prod'], description: 'Pick the environment to test against'),
+            choice(name: 'testEnv', choices: ['testEnv1', 'testEnv2'], description: '')
         ])
     ])
 } else if (JOB_NAME == 'amt-tes-stage') {
