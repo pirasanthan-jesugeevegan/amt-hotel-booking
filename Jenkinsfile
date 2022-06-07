@@ -9,6 +9,7 @@ if (JOB_NAME == 'amt-tes-prod') {
             password(name: 'PASSWORD', defaultValue: 'Test1234!')
         ])
     ])
+    def dd = 'dd'
 } else if (JOB_NAME == 'amt-tes-stage') {
     properties([
         parameters([
@@ -27,11 +28,7 @@ pipeline {
     agent { dockerfile true }
 
     environment {
-        if (JOB_NAME == 'amt-tes-prod') {
-            DISABLE_AUTH = 'true'
-        } else{
-            DISABLE_AUTH = 'false'
-        }
+        DISABLE_AUTH = dd
     }
 
     triggers {
