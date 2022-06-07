@@ -9,7 +9,7 @@ if (JOB_NAME == 'amt-tes-prod') {
             password(name: 'PASSWORD', defaultValue: 'Test1234!')
         ])
     ])
-    def dd = 'dd'
+     env.BRANCH = "master"
 } else if (JOB_NAME == 'amt-tes-stage') {
     properties([
         parameters([
@@ -27,10 +27,6 @@ pipeline {
 
     agent { dockerfile true }
 
-    environment {
-        DISABLE_AUTH = "${dd}"
-    }
-
     triggers {
          cron('H 08 * * *')
     }
@@ -47,7 +43,7 @@ pipeline {
             steps {
                 sh 'npm i'
                 echo "$JOB_NAME"
-                echo "DISABLE_AUTH is ${DISABLE_AUTH}"
+                echo "DISABLE_AUTH is ${BRANCH}"
             }
         }
         stage('Run Tests') {
