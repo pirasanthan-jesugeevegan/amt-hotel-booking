@@ -1,3 +1,9 @@
+    if (JOB_NAME == 'deploy') {
+    echo 'dsdsd'
+} else  {
+    echo 'deploy'
+}
+
 pipeline {
 
     agent { dockerfile true }
@@ -7,12 +13,6 @@ pipeline {
     }
 
     tools {nodejs "nodejs"}
-
-    if (JOB_NAME == 'deploy') {
-    echo 'dsdsd'
-} else  {
-    echo 'deploy'
-}
 
     options {
         ansiColor('xterm')
