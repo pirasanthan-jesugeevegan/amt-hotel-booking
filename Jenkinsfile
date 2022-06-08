@@ -41,7 +41,7 @@ pipeline {
             steps {
                 sh 'npm i'
                 echo "$JOB_NAME"
-                echo "DISABLE_AUTH is ${BRANCH}"
+                echo "DISABLE_AUTH is ${env.BRANCH}"
             }
         }
         stage('Run Tests') {
