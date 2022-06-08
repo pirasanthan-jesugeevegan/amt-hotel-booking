@@ -5,7 +5,7 @@ if (JOB_NAME == 'amt-tes-prod') {
             choice(name: 'TEST', choices: ['@regression','@smoke'], description: 'Pick the type of test to runned'),
         ])
     ])
-     env.BRANCH = "master"
+     env.BRANCH = credentials('amt-tes-userpass') 
 } else if (JOB_NAME == 'amt-tes-stage') {
     properties([
         parameters([  
