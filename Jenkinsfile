@@ -5,7 +5,7 @@ if (JOB_NAME == 'amt-tes-prod') {
             choice(name: 'TEST', choices: ['@regression','@smoke'], description: 'Pick the type of test to runned'),
         ])
     ])
-     def BRANCH = credentials('amt-tes-userpass') 
+    
 } else if (JOB_NAME == 'amt-tes-stage') {
     properties([
         parameters([  
@@ -13,7 +13,7 @@ if (JOB_NAME == 'amt-tes-prod') {
             choice(name: 'TEST', choices: ['@regression-stag','@smoke-stage'], description: 'Pick the type of test to runned'),
         ])
     ])
-    env.BRANCH = "new"
+    
 }
 
 pipeline {
@@ -40,8 +40,7 @@ pipeline {
         stage('Verify'){
             steps {
                 sh 'npm i'
-                echo "$job"
-                echo "DISABLE_AUTH is ${BRANCH}"
+                echo "DISABLE_AUTH is ${JOB_BASE_NAME}"
             }
         }
         stage('Run Tests') {
