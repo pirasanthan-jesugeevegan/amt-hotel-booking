@@ -1,3 +1,6 @@
+import jenkins.model.Jenkins
+def job = Jenkins.instance.getItemByFullName(JOB_NAME);
+
 if (JOB_NAME == 'amt-tes-prod') {
     properties([
         parameters([
@@ -40,7 +43,7 @@ pipeline {
         stage('Verify'){
             steps {
                 sh 'npm i'
-                echo "$JOB_NAME"
+                echo "$job"
                 echo "DISABLE_AUTH is ${BRANCH}"
             }
         }
